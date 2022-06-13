@@ -2,12 +2,7 @@ import style from "./index.module.css";
 import React from "react";
 
 const ButtonTemplate = (props) => {
-    const {
-        children,
-        text,
-        height = "100%",
-        width = "100%",
-    } = props;
+    const { children, text, height = "100%", width = "100%" } = props;
 
     return (
         <button

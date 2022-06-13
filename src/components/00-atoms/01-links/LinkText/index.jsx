@@ -3,10 +3,12 @@ import React from "react";
 
 const LinkText = (props) => {
     const { children, text, href } = props;
-    
-    return <a className={style["link"]} href={href}>
-        {text}
-    </a>
+
+    return (
+        <a className={style["link"]} href={href}>
+            {text}
+        </a>
+    );
 };
 
 export default LinkText;
