@@ -1,0 +1,26 @@
+.block {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--color-background-body-secondary);
+}
+
+.content {
+    max-width: 892px;
+    padding-top: 80px;
+}
+
+.header {
+    width: 570px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+}

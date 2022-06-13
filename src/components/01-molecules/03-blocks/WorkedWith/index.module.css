@@ -1,0 +1,21 @@
+.header {
+    text-align: start;
+    padding-bottom: 20px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+}
+
+.header {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    color: var(--color-font-secondary);
+}

@@ -1,0 +1,14 @@
+.link {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 18px;
+
+    padding: 12px 35px;
+    color: var(--color-font-additional);
+}
+
+.link:hover {
+
+    color: var(--color-primary);
+    font-weight: 700;
+}
