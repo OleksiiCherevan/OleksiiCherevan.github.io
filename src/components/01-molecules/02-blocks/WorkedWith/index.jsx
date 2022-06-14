@@ -1,7 +1,7 @@
 import style from "./index.module.css";
 import React from "react";
 import { CLIENTS } from "assets/static";
-import CardClient from "components/00-atoms/03-cards/CardClient";
+import CardLogo from "components/00-atoms/03-cards/CardLogo";
 import Text from "components/00-atoms/04-texts/Text";
 
 const WorkedWith = (props) => {
@@ -13,7 +13,7 @@ const WorkedWith = (props) => {
 
             <div className={style["clients"]}>
                 {clients.map((client) => (
-                    <CardClient key={client.image} {...client}></CardClient>
+                    <CardLogo key={client.id} {...client}></CardLogo>
                 ))}
             </div>
         </div>

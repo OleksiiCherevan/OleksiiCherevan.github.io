@@ -1,7 +1,7 @@
 import _style from "./index.module.css";
 import React from "react";
 
-const ButtonCard = (props) => {
+const ButtonTag = (props) => {
     const { children, text, style } = props;
     
     return (
@@ -11,4 +11,4 @@ const ButtonCard = (props) => {
     );
 };
 
-export default ButtonCard;
+export default ButtonTag;

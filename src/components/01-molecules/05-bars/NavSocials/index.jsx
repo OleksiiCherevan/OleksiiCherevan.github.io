@@ -9,7 +9,7 @@ const NavSocials = (props) => {
     return (
         <nav className={style["nav"]}>
             {socials.map((nav) => (
-                <LinkImage key={nav.text} {...nav}>{nav.image}</LinkImage>
+                <LinkImage key={nav.id} {...nav}>{nav.image}</LinkImage>
             ))}
         </nav>
     );

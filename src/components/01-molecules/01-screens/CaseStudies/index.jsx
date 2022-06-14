@@ -4,7 +4,7 @@ import { CASE_STUDIES } from "assets/static";
 import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAndText";
 import CardCaseStudies from "components/01-molecules/04-cards/CardCaseStudies";
 import CardCaseStudiesReverse from "components/01-molecules/04-cards/CardCaseStudiesReverse";
-import CardsCaseStudies from "components/01-molecules/05-bars/CardsCaseStudies";
+import BarCaseStudies from "components/01-molecules/05-bars/BarCaseStudies";
 
 const CaseStudies = (props) => {
     const { children } = props;
@@ -20,7 +20,7 @@ const CaseStudies = (props) => {
             </div>
 
             <div className={style["content"]}>
-                <CardsCaseStudies cards={CASE_STUDIES}></CardsCaseStudies>
+                <BarCaseStudies cards={CASE_STUDIES}></BarCaseStudies>
             </div>
         </div>
     );
