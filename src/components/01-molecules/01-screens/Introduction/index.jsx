@@ -1,12 +1,10 @@
 import style from "./index.module.css";
 import React from "react";
 
-import ButtonBigShadow from "components/00-atoms/02-buttons/ButtonBigShadow";
 import { USER_PHOTO } from "assets/static";
-import WorkedWith from "components/01-molecules/03-blocks/WorkedWith";
-import Header1 from "components/00-atoms/04-texts/Header1";
-import Text from "components/00-atoms/04-texts/Text";
-import HeaderAndText from "components/01-molecules/00-headers/HeaderAndText";
+import WorkedWith from "components/01-molecules/02-blocks/WorkedWith";
+import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAndText";
+import ButtonBlock from "components/00-atoms/02-buttons/ButtonBlock";
 
 const Introduction = (props) => {
     const { children } = props;
@@ -16,20 +14,17 @@ const Introduction = (props) => {
             <div className={style["content"]}>
                 <div className={style["greetings"]}>
                     <div className={style["header"]}>
-                        <HeaderAndText
+                        <HeaderBlockAndText
                             header="Your Name Here"
                             text="Intro text: Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua."
                             colorHeader="var(--color-font-secondary)"
-                        ></HeaderAndText>
+                        ></HeaderBlockAndText>
                     </div>
 
                     <div className={style["button"]}>
-                        <ButtonBigShadow
-                            width="350px"
-                            text="Let`s get started"
-                        ></ButtonBigShadow>
+                        <ButtonBlock text="Let`s get started"></ButtonBlock>
                     </div>
                 </div>
 

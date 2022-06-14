@@ -1,0 +1,3 @@
+.card > div {
+   flex-direction: row-reverse; 
+}
