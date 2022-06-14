@@ -1,0 +1,27 @@
+.block {
+    width: 100%;
+
+    padding-top: 80px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-color: var(--color-background-body-secondary);
+}
+
+
+.header {
+    width: 570px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+
+.content {
+    padding-bottom: 80px;
+
+
+   
+}

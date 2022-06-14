@@ -1,0 +1,19 @@
+.card {
+    max-width: 445px;
+    text-align: start;
+}
+
+.header {
+    width: 421px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image {
+    width: 445px;
+    height: 300px;
+
+    padding-bottom: 20px;
+}
