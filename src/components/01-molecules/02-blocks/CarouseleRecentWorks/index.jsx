@@ -1,38 +1,61 @@
 import style from "./index.module.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import BarRecentWorks from "components/01-molecules/05-bars/BarRecentWorks";
 
-const COUNT_CARDS = 2;
+import { ARROW_LEFT_GRAY, ARROW_RIGHT_GRAY } from "assets/static";
+
 const CarouseleRecentWorks = (props) => {
-    const { children, cards = [] } = props;
+    const { children, cards = [], countShowCards = 2 } = props;
+    const isMoreThanTwo = cards.length > countShowCards;
 
     const [works, setWorks] = useState([]);
     const [index, setIndex] = useState(0);
 
+    const [isNext, setIsNext] = useState(true);
+
     useEffect(() => {
-        const newArray = getCorrectArray();
-        setWorks(newArray);
+        const newWorks = getVisibleWorks();
+        setWorks(newWorks);
     }, [index]);
 
-    const getCorrectArray = () => {
-        return cards.slice(index, index + COUNT_CARDS);
+    const getVisibleWorks = () => {
+        let newCards = [...cards, ...cards, ...cards];
+        let realIndex = cards.length + index;
+
+        return newCards.slice(realIndex, realIndex + countShowCards + 1);
     };
 
-    const handleDecreaseIndex = (e) => {
-        let newIndex = index <= 0 ? cards.length - COUNT_CARDS : index - 1;
+    const handleDecreaseIndex = () => {
+        let newIndex = (index - 1) % cards.length;
+        setIsNext(false);
         setIndex(newIndex);
     };
 
-    const handleIncreaseIndex = (e) => {
-        let newIndex = index + 1 >= cards.length - 1 ? 0 : index + 1;
+    const handleIncreaseIndex = () => {
+        let newIndex = (index + 1) % cards.length;
+        setIsNext(true);
         setIndex(newIndex);
     };
 
     return (
         <div className={style["block"]}>
-            <div onClick={(e) => handleDecreaseIndex(e)}>{"<"}</div>
-            <BarRecentWorks cards={works}></BarRecentWorks>
-            <button onClick={(e) => handleIncreaseIndex(e)}>{">"}</button>
+            {isMoreThanTwo ? (
+                <button onClick={(e) => handleDecreaseIndex()}>
+                    {ARROW_LEFT_GRAY}
+                </button>
+            ) : null}
+
+            <BarRecentWorks
+                cards={works}
+                countCards={countShowCards}
+                isNext={isNext}
+            ></BarRecentWorks>
+
+            {isMoreThanTwo ? (
+                <button onClick={(e) => handleIncreaseIndex()}>
+                    {ARROW_RIGHT_GRAY}
+                </button>
+            ) : null}
         </div>
     );
 };

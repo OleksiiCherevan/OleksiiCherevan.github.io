@@ -5,7 +5,7 @@ import { ARROW_LEFT } from "assets/static";
 import TemplateButton from "../TemplateButton";
 
 const ButtonBlock = (props) => {
-    const { children, text } = props;
+    const { children, text, height } = props;
 
     return (
         // <button className={style["button"]}>
@@ -16,6 +16,7 @@ const ButtonBlock = (props) => {
             style={{
                 border: "1px solid var(--color-secondary)",
                 boxShadow: "0px 8px 30px rgba(63, 142, 0, 0.5)",
+                height: height
             }}
         ></TemplateButton>
     );

@@ -1,39 +1,67 @@
-import LinkedIn from "./images/linkedIn.svg";
+import UserPhoto from "../images/user.png";
+import WORK1 from "../images/work1.png";
+import WORK2 from "../images/work2.png";
+import WORK3 from "../images/work3.png";
 
-import UserPhoto from "./images/user.png";
-
-import ArrowLeft from "./images/arrow-left.svg";
-import Quotes from "./images/quotes.svg";
-
-import WORK1 from "./images/work1.png";
-import WORK2 from "./images/work2.png";
-import WORK3 from "./images/work3.png";
+import LinkedIn from "../images/linkedIn.svg";
+import ArrowLeft from "../images/arrow-left.svg";
+import Quotes from "../images/quotes.svg";
 
 export const USER_PHOTO = UserPhoto;
 
 export const ARROW_LEFT = ArrowLeft;
+export const ARROW_RIGHT_GRAY = (
+    <svg
+        width="6"
+        height="10"
+        viewBox="0 0 6 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M5.63335 4.37364L1.51379 0.259206C1.16776 -0.086402 0.605566 -0.086402 0.259528 0.259206C-0.0865095 0.604814 -0.0865095 1.16631 0.259528 1.51191L3.75196 5L0.259528 8.4881C-0.0865095 8.8337 -0.0865095 9.3952 0.259528 9.7408C0.432545 9.91361 0.65957 10 0.886652 10C1.11373 10 1.34078 9.9136 1.51378 9.7408L5.63333 5.62637C5.97937 5.28076 5.97939 4.71925 5.63335 4.37364Z"
+            fill="#9C9C9C"
+        />
+    </svg>
+);
+
+export const ARROW_LEFT_GRAY = (
+    <svg
+        width="6"
+        height="10"
+        viewBox="0 0 6 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M0.259719 4.37364L4.37927 0.259206C4.72531 -0.086402 5.2875 -0.086402 5.63354 0.259206C5.97958 0.604814 5.97958 1.16631 5.63354 1.51191L2.14111 5L5.63354 8.4881C5.97958 8.8337 5.97958 9.3952 5.63354 9.7408C5.46052 9.91361 5.2335 10 5.00641 10C4.77933 10 4.55229 9.9136 4.37929 9.7408L0.259738 5.62637C-0.0862999 5.28076 -0.0862999 4.71927 0.259738 4.37366L0.259719 4.37364Z"
+            fill="#9C9C9C"
+        />
+    </svg>
+);
+
 export const QUOTES = Quotes;
 
 export const NAVS = [
     {
         text: "Home",
-        href: "#",
+        href: "#home",
     },
     {
         text: "Case studies",
-        href: "#",
+        href: "#case-studies",
     },
     {
         text: "Testimonials",
-        href: "#",
+        href: "#testimonials",
     },
     {
         text: "Recent work",
-        href: "#",
+        href: "#recent-work",
     },
     {
         text: "Get in touch",
-        href: "#",
+        href: "#contact",
     },
 ];
 

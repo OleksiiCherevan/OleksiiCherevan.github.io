@@ -4,6 +4,7 @@ import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAn
 
 import { default as BarTestimonials } from "components/01-molecules/05-bars/BarTestimonials";
 import { TESTIMONIALS } from "assets/static";
+import ContactForm from "components/01-molecules/02-blocks/ContactForm";
 
 const Contact = (props) => {
     const { children } = props;
@@ -19,7 +20,7 @@ const Contact = (props) => {
             </div>
 
             <div className={style["content"]}>
-
+                <ContactForm></ContactForm>
             </div>
         </div>
     );

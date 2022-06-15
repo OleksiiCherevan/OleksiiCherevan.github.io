@@ -12,10 +12,18 @@
   --color-font-primary: #000;
   --color-font-secondary: #fff;
   --color-font-additional: #9c9c9c;
+  --color-font-placeholder: #757575;
 
   --color-background-body: #080808;
-  --color-background-additional: #1b1b1b;
   --color-background-body-secondary: #f5f5f5;
+  --color-background-additional: #1b1b1b;
+  --color-background-field: #f8f8f8;
+
+  --color-border-field: #d8d8d8;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

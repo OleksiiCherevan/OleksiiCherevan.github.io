@@ -5,10 +5,10 @@ const CardUser = (props) => {
     const { children, image, text } = props;
 
     return (
-        <div className={style["card"]}>
+        <a className={style["card"]} href="#">
             <img className={style["image"]} src={image} alt={text}></img>
             {text}
-        </div>
+        </a>
     );
 };
 

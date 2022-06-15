@@ -5,7 +5,7 @@ import ButtonTag from "components/00-atoms/02-buttons/ButtonTag";
 import HeaderCardAndText from "components/01-molecules/06-headers/HeaderCardAndText";
 
 const CardCaseStudies = (props) => {
-    const { children, text, textTag, header, colorPrimary, colorSecondary, image } =
+    const { children, text, textTag, header, colorPrimary, colorSecondary, href, image } =
         props;
 
     return (
@@ -24,7 +24,9 @@ const CardCaseStudies = (props) => {
                     ></HeaderCardAndText>
                 </div>
 
+
                 <ButtonCard
+                    href={href}
                     text="View case study"
                     style={{ background: colorPrimary }}
                 ></ButtonCard>

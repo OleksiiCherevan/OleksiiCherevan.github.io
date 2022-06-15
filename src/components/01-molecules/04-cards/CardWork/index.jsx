@@ -9,11 +9,11 @@ import ButtonBlock from "components/00-atoms/02-buttons/ButtonBlock";
 import ButtonCard from "components/00-atoms/02-buttons/ButtonCard";
 
 const CardWork = (props) => {
-    const { children, text, header, href, image } = props;
+    const { children, text, header, href, image, imageAnimation } = props;
 
     return (
         <div className={style["card"]}>
-            <img className={style["image"]} src={image} alt={header}></img>
+            <img className={`${style["image"]} ${imageAnimation}`} src={image} alt={header}></img>
 
             <div className={style["header"]}>
                 <HeaderCardAndText

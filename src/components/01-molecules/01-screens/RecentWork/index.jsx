@@ -21,7 +21,9 @@ const RecentWork = (props) => {
             </div>
 
             <div className={style["content"]}>
-                <CarouseleRecentWorks cards={RECENT_WORKS}></CarouseleRecentWorks>
+                <CarouseleRecentWorks
+                    cards={RECENT_WORKS}
+                ></CarouseleRecentWorks>
             </div>
         </div>
     );

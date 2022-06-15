@@ -2,12 +2,12 @@ import style from "./index.module.css";
 import React from "react";
 
 const CardLogo = (props) => {
-    const { children, image, text } = props;
+    const { children, image, href, text } = props;
 
     return (
-        <div className={style["card"]}>
+        <a className={style["card"]} href={href}>
             <img src={image} alt={text}></img>
-        </div>
+        </a>
     );
 };
 

@@ -2,12 +2,12 @@ import _style from "./index.module.css";
 import React from "react";
 
 const ButtonTag = (props) => {
-    const { children, text, style } = props;
+    const { children, text, style, href } = props;
     
     return (
-        <button className={_style["button"]} style={style}>
+        <a className={_style["button"]} style={style} href={href}>
             {text}
-        </button>
+        </a>
     );
 };
 
