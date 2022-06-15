@@ -2,10 +2,6 @@
     display: flex;
     gap: 30px;
 }
-
-.card {
-}
-
 .animation {
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
