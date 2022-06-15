@@ -1,11 +1,11 @@
-# Hi there, welcome to my future portfolio! This is not my design! I took it from figma https://www.figma.com/community/file/1116316830579955404
+# Hi there, this is a free portfolio and you can use that) Example => https://oleksiicherevan.github.io/
 
-## Currently you can see only desktop version of this project 
-<a href="https://oleksiicherevan.github.io/" style="font-size: 24px">
-    click me =)
+## This page`s design  
+<a href="https://www.figma.com/community/file/1116316830579955404" style="font-size: 24px">
+    click me =) 
 </a>
 
-## If you want to copy my project you chould use foloving steps: 
+## If you want to copy this project you chould use foloving commands: 
 
 1.
 <code>
