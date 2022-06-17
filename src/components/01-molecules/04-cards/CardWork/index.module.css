@@ -4,8 +4,8 @@
 }
 
 .header {
-    height: 116px;
-    width: 421px;
+    min-height: 116px;
+    max-width: 421px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -13,8 +13,20 @@
 }
 
 .image {
-    width: 445px;
-    height: 300px;
+    height: auto;
+    max-height: 300px;
+    width: 100%;
+    max-width: 445px;
 
     padding-bottom: 20px;
+}
+
+.button {
+    width: 160px;
+}
+
+@media screen and (max-width: 1023px) {
+    .button {
+        width: 100%;
+    }
 }

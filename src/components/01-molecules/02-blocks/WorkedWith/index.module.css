@@ -1,3 +1,7 @@
+.block {
+    margin: 0 10px;
+}
+
 .header {
     text-align: start;
     padding-bottom: 20px;
@@ -6,7 +10,9 @@
 .clients {
     display: flex;
     justify-content: space-between;
-    /* gap: 30px; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
 }
 
 .header {
@@ -18,4 +24,13 @@
     letter-spacing: 0.01em;
 
     color: var(--color-font-secondary);
+}
+
+@media screen and (max-width: 1023px) {
+    .clients {
+        justify-content: space-around;
+    }
+    .header {
+        text-align: center;
+    }
 }

@@ -11,7 +11,7 @@ const ButtonCard = (props) => {
         // <button className={_style["button"]} style={style}>
         //     {text} <img src={ARROW_LEFT} alt="arrow left" />
         // </button>
-        <TemplateButton text={text} href={href} style={{height: "38px", width: "190px", ...style}}></TemplateButton>
+        <TemplateButton text={text} href={href} style={{height: "38px", ...style}}></TemplateButton>
     );
 };
 

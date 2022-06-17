@@ -20,6 +20,12 @@
   --color-background-field: #f8f8f8;
 
   --color-border-field: #d8d8d8;
+
+
+  --break-mobile: 768px;
+  --break-tablet: 1023px;
+  --break-laptop: 1280px;
+  --break-desktop: 1440px;
 }
 
 html {
@@ -35,22 +41,3 @@ body {
 a {
   text-decoration: none;
 }
-
-/* p {
-  font-family: "IBM Plex Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-
-  color: var(--color-font-additional);
-} */
-/* 
-h1 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 52px;
-} */

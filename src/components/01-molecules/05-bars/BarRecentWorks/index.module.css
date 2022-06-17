@@ -2,6 +2,7 @@
     display: flex;
     gap: 30px;
 }
+
 .animation {
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;

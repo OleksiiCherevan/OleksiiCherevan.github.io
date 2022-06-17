@@ -11,3 +11,18 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.header-mobile {
+    display: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+    }
+}

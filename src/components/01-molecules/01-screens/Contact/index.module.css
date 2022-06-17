@@ -1,6 +1,6 @@
 .block {
     width: 100%;
-
+    padding: 0 10px;
     padding-top: 80px;
 
     display: flex;
@@ -13,10 +13,13 @@
 .content {
     padding-bottom: 80px;
     max-width: 920px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
-    width: 570px;
+    max-width: 570px;
     padding-bottom: 40px;
     text-align: center;
 }

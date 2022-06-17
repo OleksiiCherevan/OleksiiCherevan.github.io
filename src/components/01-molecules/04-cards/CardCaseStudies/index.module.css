@@ -1,5 +1,5 @@
 .card {
-    height: 300px;
+    min-height: 300px;
 
     display: flex;
     gap: 26px;
@@ -21,10 +21,29 @@
     box-sizing: content-box;
     padding-top: 20px;
     padding-bottom: 40px;
-    height: 134px;
+    min-height: 134px;
 }
 
 .image {
     flex: 445;
-    height: 100%;
+    height: auto;
+    max-width: 480px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .card {
+        flex-direction: column-reverse;
+        max-width: 320px;
+    }
+    .content {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 480px;
+    }
 }

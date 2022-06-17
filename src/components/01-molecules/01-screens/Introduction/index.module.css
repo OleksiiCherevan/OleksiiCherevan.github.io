@@ -1,9 +1,13 @@
 .screen {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     /* height: 100vh; */
     max-width: 920px;
     width: 100%;
     padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content {
@@ -11,7 +15,7 @@
     margin-top: 80px;
     padding-bottom: 60px;
 
-    height: 350px;
+    /* height: 350px; */
     display: flex;
     justify-content: space-between;
 
@@ -35,13 +39,43 @@
 .user-image {
     flex: 452;
 
+    max-height: 350px;
+    max-width: 350px;
+
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
 }
 
 .user-image img {
-    height: 350px;
-    width: 350px;
+    height: auto;
+    width: 100%;
     border-radius: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .screen {
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .greetings {
+        max-width: 425px;
+    }
+    .header {
+        text-align: center;
+    }
+    .user-image {
+        height: 100%;
+        width: 100%;
+
+        justify-content: center;
+    }
+    .button {
+        width: 100%;
+    }
 }

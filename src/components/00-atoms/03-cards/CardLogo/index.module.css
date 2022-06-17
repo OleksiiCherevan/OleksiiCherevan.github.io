@@ -1,6 +1,6 @@
 .card {
     cursor: pointer;
-    
+
     height: 60px;
     width: 160px;
     border: var(--color-background-additional) 1px solid;
@@ -11,5 +11,16 @@
 }
 
 .card .image {
+}
 
+@media screen and (max-width: 768px) {
+    .card {
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex: 1;
+        min-width: 40%;
+    }
 }

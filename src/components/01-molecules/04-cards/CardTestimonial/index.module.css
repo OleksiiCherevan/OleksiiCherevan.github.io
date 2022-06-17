@@ -1,8 +1,8 @@
 .border {
     position: relative;
 
-    height: 212px;
-    width: 445px;
+    min-height: 212px;
+    max-width: 445px;
 
     background: linear-gradient(90deg, #484848 0%, rgba(27, 27, 27, 0) 100%);
     border-radius: 6px;
@@ -42,4 +42,13 @@
     letter-spacing: 0.01em;
 
     color: var(--color-font-secondary);
+}
+
+@media screen and (max-width: 1023px) {
+    .border {
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 768px) {
 }

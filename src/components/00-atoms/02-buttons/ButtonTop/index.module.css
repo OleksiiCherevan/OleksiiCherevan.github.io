@@ -22,6 +22,7 @@
     background-color: var(--color-secondary); 
 }
 
+/* .button-top::after */
 .arrow-up {
     border: solid var(--color-font-secondary);
     background-color: transparent;

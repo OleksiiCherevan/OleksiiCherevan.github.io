@@ -13,7 +13,11 @@ const CardWork = (props) => {
 
     return (
         <div className={style["card"]}>
-            <img className={`${style["image"]} ${imageAnimation}`} src={image} alt={header}></img>
+            <img
+                className={`${style["image"]} ${imageAnimation}`}
+                src={image}
+                alt={header}
+            ></img>
 
             <div className={style["header"]}>
                 <HeaderCardAndText
@@ -22,13 +26,15 @@ const CardWork = (props) => {
                 ></HeaderCardAndText>
             </div>
 
-            <ButtonCard
-                text="Know more"
-                style={{
-                    width: "140px",
-                    boxShadow: "0px 8px 30px rgba(63, 142, 0, 0.5)",
-                }}
-            ></ButtonCard>
+            <div className={style["button"]}>
+                <ButtonCard
+                    text="Know more"
+                    style={{
+                        width: "100%",
+                        boxShadow: "0px 8px 30px rgba(63, 142, 0, 0.5)",
+                    }}
+                ></ButtonCard>
+            </div>
         </div>
     );
 };

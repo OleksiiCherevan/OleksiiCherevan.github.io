@@ -2,9 +2,6 @@ import style from "./index.module.css";
 import React from "react";
 import { CASE_STUDIES, RECENT_WORKS } from "assets/static";
 import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAndText";
-import BarCaseStudies from "components/01-molecules/05-bars/BarCaseStudies";
-import CardWork from "components/01-molecules/04-cards/CardWork";
-import BarRecentWorks from "components/01-molecules/05-bars/BarRecentWorks";
 import CarouseleRecentWorks from "components/01-molecules/02-blocks/CarouseleRecentWorks";
 
 const RecentWork = (props) => {

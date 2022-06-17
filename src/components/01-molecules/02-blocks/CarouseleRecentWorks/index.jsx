@@ -3,9 +3,15 @@ import React, { useEffect, useRef, useState } from "react";
 import BarRecentWorks from "components/01-molecules/05-bars/BarRecentWorks";
 
 import { ARROW_LEFT_GRAY, ARROW_RIGHT_GRAY } from "assets/static";
+import ButtonCarouseleArrow from "components/00-atoms/02-buttons/ButtonCarouseleArrow";
 
 const CarouseleRecentWorks = (props) => {
-    const { children, cards = [], countShowCards = 2 } = props;
+    const {
+        children,
+        cards = [],
+        countShowCards = 2,
+        countCardsMobile = 1,
+    } = props;
     const isMoreThanTwo = cards.length > countShowCards;
 
     const [works, setWorks] = useState([]);
@@ -39,23 +45,69 @@ const CarouseleRecentWorks = (props) => {
 
     return (
         <div className={style["block"]}>
-            {isMoreThanTwo ? (
-                <button onClick={(e) => handleDecreaseIndex()}>
-                    {ARROW_LEFT_GRAY}
-                </button>
-            ) : null}
+            <div className={style["carousele-mobile"]}>
+                {isMoreThanTwo ? (
+                    <div
+                        className={style["button-wrapper"]}
+                        onClick={(e) => handleDecreaseIndex()}
+                    >
+                        <ButtonCarouseleArrow
+                            onClick={(e) => handleDecreaseIndex()}
+                            icon={ARROW_LEFT_GRAY}
+                        ></ButtonCarouseleArrow>
+                    </div>
+                ) : null}
 
-            <BarRecentWorks
-                cards={works}
-                countCards={countShowCards}
-                isNext={isNext}
-            ></BarRecentWorks>
+                <BarRecentWorks
+                    cards={works}
+                    countCards={countCardsMobile}
+                    isNext={isNext}
+                ></BarRecentWorks>
 
-            {isMoreThanTwo ? (
-                <button onClick={(e) => handleIncreaseIndex()}>
-                    {ARROW_RIGHT_GRAY}
-                </button>
-            ) : null}
+                {isMoreThanTwo ? (
+                    <div
+                        className={style["button-wrapper"]}
+                        onClick={(e) => handleIncreaseIndex()}
+                    >
+                        <ButtonCarouseleArrow
+                            onClick={(e) => handleIncreaseIndex()}
+                            icon={ARROW_RIGHT_GRAY}
+                        ></ButtonCarouseleArrow>
+                    </div>
+                ) : null}
+            </div>
+
+            <div className={style["carousele"]}>
+                {isMoreThanTwo ? (
+                    <div
+                        className={style["button-wrapper"]}
+                        onClick={(e) => handleDecreaseIndex()}
+                    >
+                        <ButtonCarouseleArrow
+                            onClick={(e) => handleDecreaseIndex()}
+                            icon={ARROW_LEFT_GRAY}
+                        ></ButtonCarouseleArrow>
+                    </div>
+                ) : null}
+
+                <BarRecentWorks
+                    cards={works}
+                    countCards={countShowCards}
+                    isNext={isNext}
+                ></BarRecentWorks>
+
+                {isMoreThanTwo ? (
+                    <div
+                        className={style["button-wrapper"]}
+                        onClick={(e) => handleIncreaseIndex()}
+                    >
+                        <ButtonCarouseleArrow
+                            onClick={(e) => handleIncreaseIndex()}
+                            icon={ARROW_RIGHT_GRAY}
+                        ></ButtonCarouseleArrow>
+                    </div>
+                ) : null}
+            </div>
         </div>
     );
 };

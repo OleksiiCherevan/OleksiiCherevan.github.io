@@ -14,7 +14,6 @@ const Main = (props) => {
 
     return (
         <div className={style["main"]}>
-            <ButtonTop></ButtonTop>
             <Header></Header>
 
             <div id="home" className={style["block"]}>
@@ -36,6 +35,7 @@ const Main = (props) => {
                 <Contact></Contact>
             </div>
             <Footer></Footer>
+            <ButtonTop></ButtonTop>
         </div>
     );
 };
