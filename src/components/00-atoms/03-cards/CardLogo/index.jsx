@@ -6,7 +6,7 @@ const CardLogo = (props) => {
 
     return (
         <a className={style["card"]} href={href}>
-            <img src={image} alt={text}></img>
+            <img className={style["image"]} src={image} alt={text}></img>
         </a>
     );
 };

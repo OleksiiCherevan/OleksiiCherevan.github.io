@@ -13,14 +13,14 @@ const CaseStudies = (props) => {
         <div className={style["block"]}>
             <div className={style["header"]}>
                 <HeaderBlockAndText
-                    header="Case Studies"
-                    text="Solving user and business problems since last 15+ years. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                    header={CASE_STUDIES.header}
+                    text={CASE_STUDIES.text}
                     colorHeader="var(--color-font-primary)"
                 ></HeaderBlockAndText>
             </div>
 
             <div className={style["content"]}>
-                <BarCaseStudies cards={CASE_STUDIES}></BarCaseStudies>
+                <BarCaseStudies cards={CASE_STUDIES.studies}></BarCaseStudies>
             </div>
         </div>
     );

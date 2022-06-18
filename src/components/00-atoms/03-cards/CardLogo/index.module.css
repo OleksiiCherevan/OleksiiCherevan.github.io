@@ -3,14 +3,18 @@
 
     height: 60px;
     width: 160px;
-    border: var(--color-background-additional) 1px solid;
+    border: var(--color-background-additional) 2px solid;
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--color-background-body-secondary);
 }
 
-.card .image {
+.image {
+    height: 40px;
+    width: 40px;
 }
 
 @media screen and (max-width: 768px) {

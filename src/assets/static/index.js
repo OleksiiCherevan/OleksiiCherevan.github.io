@@ -1,14 +1,31 @@
-import UserPhoto from "../images/user.png";
-import WORK1 from "../images/work1.png";
-import WORK2 from "../images/work2.png";
-import WORK3 from "../images/work3.png";
+import userPhoto from "assets/images/user/user.jpg";
+import validation from "assets/images/works/validation.jpg";
+import jwt from "assets/images/works/JWT.jpg";
+import rest from "assets/images/works/rest.jpg";
 
-import LinkedIn from "../images/linkedIn.svg";
-import ArrowLeft from "../images/arrow-left.svg";
-import Quotes from "../images/quotes.svg";
+// import WORK2 from "assets/images/works/work2.png";
+// import WORK3 from "assets/images/works/work3.png";
 
+import LinkedIn from "assets/images/logos/linkedIn.svg";
+import ArrowLeft from "assets/images/icons/arrow-left.svg";
+import Quotes from "assets/images/icons/quotes.svg";
+
+//works
+import awesomeCard from "assets/images/works/awesome-card.jpg";
+import simpleShop from "assets/images/works/simple-shop.jpg";
+
+import html from "assets/images/logos/html.png";
+import css from "assets/images/logos/css.png";
+import js from "assets/images/logos/js.png";
+import react from "assets/images/logos/react.png";
+import figma from "assets/images/logos/figma.png";
+
+import resume from "assets/data/resume.pdf";
+
+//files
+export const RESUME = resume;
 // images
-export const USER_PHOTO = UserPhoto;
+export const USER_PHOTO = userPhoto;
 export const ARROW_LEFT = ArrowLeft;
 export const ARROW_RIGHT_GRAY = (
     <svg
@@ -113,136 +130,150 @@ export const CLIENTS = [
     {
         id: 0,
         href: "#",
-        text: "Kabanchik",
-        image: LinkedIn,
+        text: "html",
+        image: html,
     },
     {
         id: 1,
         href: "#",
-        text: "VITI",
-        image: LinkedIn,
+        text: "css",
+        image: css,
     },
     {
         id: 2,
         href: "#",
-        text: "DropBox",
-        image: LinkedIn,
+        text: "js",
+        image: js,
     },
     {
         id: 3,
         href: "#",
-        text: "Helo",
-        image: LinkedIn,
+        text: "react",
+        image: react,
     },
     {
         id: 4,
         href: "#",
-        text: "Linked",
-        image: LinkedIn,
+        text: "figma",
+        image: figma,
     },
 ];
 
-export const CASE_STUDIES = [
-    {
-        id: 0,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.",
-        header: "Work name here",
-        textTag: "Fintech",
-        colorPrimary: "#FFA217",
-        colorSecondary: "#FFF6E9",
-        href: "#",
-        image: WORK1,
-    },
-    {
-        id: 1,
-        text: "Lorem 1psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.",
-        header: "Work name here",
-        textTag: "Fintech",
-        colorPrimary: "#000AFF",
-        colorSecondary: "#D0E6FF",
-        href: "#",
-        image: WORK2,
-    },
-    {
-        id: 2,
-        text: "Lorem 2psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.",
-        header: "Work name here",
-        textTag: "Fintech",
-        colorPrimary: "#2AB090",
-        colorSecondary: "#E0FFF8",
-        href: "#",
-        image: WORK3,
-    },
-];
+export const CASE_STUDIES = {
+    header: "Case Studies",
+    text: "A case study is an in-depth study of one person, group, or event. In a case study, nearly every aspect of the subject's life and history is analyzed to seek patterns and causes of behavior.",
 
-export const TESTIMONIALS = [
-    {
-        id: 0,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        client: "Client Name",
-        image: WORK2,
-        href: "#",
-    },
-    {
-        id: 1,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        client: "Client Name",
-        image: WORK2,
-        href: "#",
-    },
-    {
-        id: 2,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        client: "Client Name",
-        image: WORK2,
-        href: "#",
-    },
-    {
-        id: 3,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        client: "Client Name",
-        image: WORK2,
-        href: "#",
-    },
-];
+    studies: [
+        {
+            id: 0,
+            header: "Implementation of validation",
+            text: "Validation is very important in application. To be sure about correct working of application you should use field validation. For example to validate username, phone number, email and etc.",
+            textTag: "React, NodeJS",
+            colorPrimary: "#FFA217",
+            colorSecondary: "#FFF6E9",
+            href: "#",
+            image: validation,
+        },
+        {
+            id: 1,
+            header: "JWT authentication",
+            text: "JWT or JSON Web Token this is a compact URL-safe means of representation claims to transferred between two parties. It uses to provide authentication in apps.",
+            textTag: "Security",
+            colorPrimary: "#000AFF",
+            colorSecondary: "#D0E6FF",
+            href: "#",
+            image: jwt,
+        },
+        {
+            id: 2,
+            header: "Using REST API ",
+            text: "REST API this is an technology which provides interface to transfer information between two sides. As example i use client-server architecture, backend part is express (NodeJS) and frontend part is ReactJS.",
+            textTag: "Fintech",
+            colorPrimary: "#2AB090",
+            colorSecondary: "#E0FFF8",
+            href: "#",
+            image: rest,
+        },
+    ],
+};
 
-export const RECENT_WORKS = [
-    {
-        id: 0,
-        header: "Work name here1",
-        text: "Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.",
-        href: "#",
-        image: WORK1,
-    },
-    {
-        id: 1,
-        header: "Work name here2",
-        text: "Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.",
-        href: "#",
-        image: WORK2,
-    },
-    {
-        id: 2,
-        header: "Work name here3",
-        text: "Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u",
+export const TESTIMONIALS = {
+    header: "Testimonials",
+    text: "",
+    testimonials: [
+        {
+            id: 0,
+            text: "I needed to improve my sales using webpage and Alex helped me with it. Thank you",
+            client: "Vasil",
+            image: userPhoto,
+            href: "#",
+        },
+        // This man helped me with creating single page application.
+        {
+            id: 1,
+            text: "I had problem with my design in HTML. Alex helped me with it very fast, also he showed me how to work with it more professional",
+            client: "Yaroslav",
+            image: userPhoto,
+            href: "#",
+        },
+        {
+            id: 2,
+            text: "React is my passion but sometimes i make mistakes. One day i made a mistake and i couldn't solve it. I asked Alex to help me with it and he helped.",
+            client: "Dmitriy",
+            image: userPhoto,
+            href: "#",
+        },
+        {
+            id: 3,
+            text: "Thank you so much! This man saved me! I had a lot of work and the deadlines were very close. I couldn`t handle it on my own, so i called Alex. I barely kept my job, and  Alex safe it",
+            client: "Client Name",
+            image: userPhoto,
+            href: "#",
+        },
+    ],
+};
 
-        href: "#",
-        image: WORK3,
-    },
-    {
-        id: 3,
-        header: "Work name here4",
-        text: "Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u",
+export const RECENT_WORKS = {
+    header: "Recent Work",
+    text: "Solving user and business problems since last 15+ years. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    works: [
+        {
+            id: 0,
+            header: "Product card",
+            text: "This is a product card from figma. It has different states which depends on count in store",
+            href: "#",
+            image: awesomeCard,
+        },
+        {
+            id: 1,
+            header: "Test task",
+            text: "Make a react application from figma design. To develop this application i used atom design architecture, css modules, redux-toolkit",
+            href: "#",
+            image: simpleShop,
+        },
+        // {
+        //     id: 2,
+        //     header: "Work name here3",
+        //     text: "Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u",
 
-        href: "#",
-        image: WORK1,
-    },
-    {
-        id: 4,
-        header: "Work name here5",
-        text: "Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u",
+        //     href: "#",
+        //     image: WORK3,
+        // },
+        // {
+        //     id: 3,
+        //     header: "Work name here4",
+        //     text: "Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u",
 
-        href: "#",
-        image: WORK1,
-    },
-];
+        //     href: "#",
+        //     image: WORK1,
+        // },
+        // {
+        //     id: 4,
+        //     header: "Work name here5",
+        //     text: "Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u",
+
+        //     href: "#",
+        //     image: WORK1,
+        // },
+    ],
+};

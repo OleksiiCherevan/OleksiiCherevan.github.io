@@ -1,11 +1,12 @@
 .card {
     max-width: 445px;
     text-align: start;
+    width: 100%;
 }
 
 .header {
     min-height: 116px;
-    max-width: 421px;
+    /* max-width: 421px; */
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -13,12 +14,19 @@
 }
 
 .image {
-    height: auto;
-    max-height: 300px;
+    /* height: auto; */
+
+    -webkit-box-shadow: 3px 3px 15px 6px rgba(0, 0, 0, 0.29);
+    box-shadow: 3px 3px 15px 6px rgba(0, 0, 0, 0.29);
+
     width: 100%;
+    height: 300px;
     max-width: 445px;
 
-    padding-bottom: 20px;
+    object-fit: cover;
+
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .button {
