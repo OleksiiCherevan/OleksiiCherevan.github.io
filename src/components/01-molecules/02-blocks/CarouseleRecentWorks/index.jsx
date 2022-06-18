@@ -12,7 +12,6 @@ const CarouseleRecentWorks = (props) => {
         countShowCards = 2,
         countCardsMobile = 1,
     } = props;
-    const isMoreThanTwo = cards.length > countShowCards;
 
     const [works, setWorks] = useState([]);
     const [index, setIndex] = useState(0);
@@ -46,7 +45,7 @@ const CarouseleRecentWorks = (props) => {
     return (
         <div className={style["block"]}>
             <div className={style["carousele-mobile"]}>
-                {isMoreThanTwo ? (
+                {cards.length > countCardsMobile ? (
                     <div
                         className={style["button-wrapper"]}
                         onClick={(e) => handleDecreaseIndex()}
@@ -64,7 +63,7 @@ const CarouseleRecentWorks = (props) => {
                     isNext={isNext}
                 ></BarRecentWorks>
 
-                {isMoreThanTwo ? (
+                {cards.length > countCardsMobile ? (
                     <div
                         className={style["button-wrapper"]}
                         onClick={(e) => handleIncreaseIndex()}
@@ -78,7 +77,7 @@ const CarouseleRecentWorks = (props) => {
             </div>
 
             <div className={style["carousele"]}>
-                {isMoreThanTwo ? (
+                {cards.length > countShowCards ? (
                     <div
                         className={style["button-wrapper"]}
                         onClick={(e) => handleDecreaseIndex()}
@@ -96,7 +95,7 @@ const CarouseleRecentWorks = (props) => {
                     isNext={isNext}
                 ></BarRecentWorks>
 
-                {isMoreThanTwo ? (
+                {cards.length > countShowCards ? (
                     <div
                         className={style["button-wrapper"]}
                         onClick={(e) => handleIncreaseIndex()}

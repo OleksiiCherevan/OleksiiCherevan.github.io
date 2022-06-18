@@ -12,14 +12,16 @@ const Testimonials = (props) => {
         <div className={style["block"]}>
             <div className={style["header"]}>
                 <HeaderBlockAndText
-                    header="Testimonials"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    header={TESTIMONIALS.header}
+                    text={TESTIMONIALS.text}
                     colorHeader="var(--color-font-secondary)"
                 ></HeaderBlockAndText>
             </div>
 
             <div className={style["content"]}>
-                <BarTestimonials cards={TESTIMONIALS}></BarTestimonials>
+                <BarTestimonials
+                    cards={TESTIMONIALS.testimonials}
+                ></BarTestimonials>
             </div>
         </div>
     );

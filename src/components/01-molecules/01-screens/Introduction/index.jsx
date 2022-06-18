@@ -1,7 +1,7 @@
 import style from "./index.module.css";
 import React from "react";
 
-import { USER_PHOTO } from "assets/static";
+import { RESUME, USER_PHOTO } from "assets/static";
 import WorkedWith from "components/01-molecules/02-blocks/WorkedWith";
 import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAndText";
 import ButtonBlock from "components/00-atoms/02-buttons/ButtonBlock";
@@ -23,7 +23,10 @@ const Introduction = (props) => {
                     </div>
 
                     <div className={style["button"]}>
-                        <ButtonBlock text="Let`s get started"></ButtonBlock>
+                        <ButtonBlock
+                            text="Download CV"
+                            href={RESUME}
+                        ></ButtonBlock>
                     </div>
                 </div>
 
