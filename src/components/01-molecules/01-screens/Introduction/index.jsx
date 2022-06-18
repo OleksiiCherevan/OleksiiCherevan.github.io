@@ -6,6 +6,10 @@ import WorkedWith from "components/01-molecules/02-blocks/WorkedWith";
 import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAndText";
 import ButtonBlock from "components/00-atoms/02-buttons/ButtonBlock";
 
+import { INTRODUCTION } from "assets/static";
+import HeaderBlock from "components/00-atoms/04-texts/HeaderBlock";
+import Text from "components/00-atoms/04-texts/Text";
+
 const Introduction = (props) => {
     const { children } = props;
 
@@ -14,13 +18,8 @@ const Introduction = (props) => {
             <div className={style["content"]}>
                 <div className={style["greetings"]}>
                     <div className={style["header"]}>
-                        <HeaderBlockAndText
-                            header="Your Name Here"
-                            text="Intro text: Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua."
-                            colorHeader="var(--color-font-secondary)"
-                        ></HeaderBlockAndText>
+                        <HeaderBlock text={INTRODUCTION.name}></HeaderBlock>
+                        <Text text={INTRODUCTION.description}></Text>
                     </div>
 
                     <div className={style["button"]}>

@@ -7,8 +7,8 @@ import LinkedIn from "../images/linkedIn.svg";
 import ArrowLeft from "../images/arrow-left.svg";
 import Quotes from "../images/quotes.svg";
 
+// images
 export const USER_PHOTO = UserPhoto;
-
 export const ARROW_LEFT = ArrowLeft;
 export const ARROW_RIGHT_GRAY = (
     <svg
@@ -70,7 +70,13 @@ export const MENU_CLOSE = (
     </svg>
 );
 
+// data
 export const QUOTES = Quotes;
+export const INTRODUCTION = {
+    name: "Alex",
+    description:
+        "I am a frontend developer. I worked with ReactJS, NodeJS and their eco. I would like to work with people which know their job and can share their experience.",
+};
 
 export const NAVS = [
     {
