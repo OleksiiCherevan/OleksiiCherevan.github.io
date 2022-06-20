@@ -133,7 +133,7 @@ export const SOCIALS = [
         image: linkedIn,
     },{
         id: 1,
-        href: "https://www.linkedin.com/in/oleksii-cherevan-166560238/",
+        href: "https://github.com/OleksiiCherevan",
         image: gitHub,
     },
 ];
