@@ -82,7 +82,8 @@
 }
 
 @media screen and (orientation: landscape) {
-    .screen {
-        min-height: calc(100vh - 70px);
+    .content {
+        min-height: calc(100vh - 70px - 80px - 80px - 80px - 104px - 60px); 
+        /* look at this >:^) This is a bed decision ahahahahhaha*/
     }
 }
