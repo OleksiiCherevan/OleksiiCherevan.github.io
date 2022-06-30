@@ -1,6 +1,6 @@
 import style from "./index.module.css";
 import React from "react";
-import HeaderBlock from "components/00-atoms/04-texts/HeaderBlock";
+import HeaderForBlock from "components/00-atoms/04-texts/HeaderForBlock";
 import Text from "components/00-atoms/04-texts/Text";
 
 const HeaderBlockAndText = (props) => {
@@ -9,10 +9,10 @@ const HeaderBlockAndText = (props) => {
     return (
         <>
             <div className={style["header"]} style={{ color: colorHeader }}>
-                <HeaderBlock text={header}></HeaderBlock>
-            </div>
+                <HeaderForBlock text={header}></HeaderForBlock>
 
-            <Text text={text}></Text>
+                <Text text={text}></Text>
+            </div>
         </>
     );
 };

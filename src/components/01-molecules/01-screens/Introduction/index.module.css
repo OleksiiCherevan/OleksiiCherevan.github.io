@@ -1,43 +1,30 @@
-.screen {
-    max-width: 920px;
-    width: 100%;
-    padding-bottom: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-}
-
 .content {
     box-sizing: content-box;
     margin-top: 80px;
     padding-bottom: 60px;
 
-    /* height: 350px; */
     display: flex;
     justify-content: space-between;
 
     text-align: start;
 }
 
-.header {
-    margin-bottom: 30px;
-    max-width: 85%;
-}
-
-.header >div:first-child {
+.greetings > div {
     padding-bottom: 10px;
-}
 
-.header >div:last-child {
-    text-align: justify;
+    max-width: 85%;
+    text-align: justify !important;
 }
 
 .greetings {
     padding-top: 50px;
+
     color: var(--color-font-secondary);
     flex: 452;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .button {
@@ -62,17 +49,22 @@
 }
 
 @media screen and (max-width: 1023px) {
-    .screen {
-        align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .content {
+        max-width: 425px;
+        display: flex;
         flex-direction: column-reverse;
         align-items: center;
+
     }
     .greetings {
-        max-width: 425px;
+        padding: 0;
+    }
+    .greetings > div {
+        max-width: 100%;
+    }
+
+    .greetings h2 {
+        text-align: center;
     }
     .header {
         text-align: center;
@@ -89,7 +81,7 @@
     }
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (orientation: landscape) {
     .screen {
         min-height: calc(100vh - 70px);
     }

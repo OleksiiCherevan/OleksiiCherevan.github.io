@@ -11,20 +11,18 @@ const Testimonials = (props) => {
 
     return (
         <BlockPage>
-            <div className={style["header"]}>
                 <HeaderBlockAndText
                     header={TESTIMONIALS.header}
                     text={TESTIMONIALS.text}
                     colorHeader="var(--color-font-secondary)"
                 ></HeaderBlockAndText>
-            </div>
 
             <div className={style["content"]}>
                 <BarTestimonials
                     cards={TESTIMONIALS.testimonials}
                 ></BarTestimonials>
             </div>
-            </BlockPage>
+        </BlockPage>
     );
 };
 

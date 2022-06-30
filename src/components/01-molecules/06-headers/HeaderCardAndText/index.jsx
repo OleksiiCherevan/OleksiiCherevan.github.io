@@ -1,7 +1,7 @@
 import style from "./index.module.css";
 import React from "react";
 import Text from "components/00-atoms/04-texts/Text";
-import HeaderCard from "components/00-atoms/04-texts/HeaderCard";
+import HeaderForCard from "components/00-atoms/04-texts/HeaderForCard";
 
 const HeaderCardAndText = (props) => {
     const { children, header, text, colorHeader } = props;
@@ -9,7 +9,7 @@ const HeaderCardAndText = (props) => {
     return (
         <>
             <div className={style["header"]} style={{ color: colorHeader }}>
-                <HeaderCard text={header}></HeaderCard>
+                <HeaderForCard text={header}></HeaderForCard>
             </div>
 
             <Text text={text}></Text>
