@@ -30,7 +30,7 @@ const ButtonTop = (props) => {
 
     return isShowTop ? (
         <a className={style["button-top"]} onClick={topFunction} href="#">
-            <i class={style["arrow-up"]}></i>
+            <i className={style["arrow-up"]}></i>
         </a>
     ) : null;
 };
