@@ -6,7 +6,8 @@ import rest from "assets/images/works/rest.jpg";
 // import WORK2 from "assets/images/works/work2.png";
 // import WORK3 from "assets/images/works/work3.png";
 
-import LinkedIn from "assets/images/logos/linkedIn.svg";
+import linkedIn from "assets/images/logos/linkedIn.svg";
+import gitHub from "assets/images/logos/github.svg";
 import ArrowLeft from "assets/images/icons/arrow-left.svg";
 import Quotes from "assets/images/icons/quotes.svg";
 
@@ -14,17 +15,24 @@ import Quotes from "assets/images/icons/quotes.svg";
 import awesomeCard from "assets/images/works/awesome-card.jpg";
 import simpleShop from "assets/images/works/simple-shop.jpg";
 
-import html from "assets/images/logos/html.png";
-import css from "assets/images/logos/css.png";
-import js from "assets/images/logos/js.png";
-import react from "assets/images/logos/react.png";
+import html from "assets/images/logos/html.svg";
+import css from "assets/images/logos/css.svg";
+import js from "assets/images/logos/js.svg";
+import react from "assets/images/logos/react.svg";
 import figma from "assets/images/logos/figma.png";
+
+// users
+import Vasil from "assets/images/user/Vasil.jpg";
+import Alina from "assets/images/user/Alina.jpg";
+import Dmitriy from "assets/images/user/Dmitriy.jpg";
+import Yaroslav from "assets/images/user/Yaroslav.jpg";
 
 import resume from "assets/data/resume.pdf";
 
 //files
 export const RESUME = resume;
 // images
+
 export const USER_PHOTO = userPhoto;
 export const ARROW_LEFT = ArrowLeft;
 export const ARROW_RIGHT_GRAY = (
@@ -121,8 +129,12 @@ export const NAVS = [
 export const SOCIALS = [
     {
         id: 0,
-        href: "#",
-        image: LinkedIn,
+        href: "https://www.linkedin.com/in/oleksii-cherevan-166560238/",
+        image: linkedIn,
+    },{
+        id: 1,
+        href: "https://github.com/OleksiiCherevan",
+        image: gitHub,
     },
 ];
 
@@ -205,7 +217,7 @@ export const TESTIMONIALS = {
             id: 0,
             text: "I needed to improve my sales using webpage and Alex helped me with it. Thank you",
             client: "Vasil",
-            image: userPhoto,
+            image: Vasil,
             href: "#",
         },
         // This man helped me with creating single page application.
@@ -213,21 +225,21 @@ export const TESTIMONIALS = {
             id: 1,
             text: "I had problem with my design in HTML. Alex helped me with it very fast, also he showed me how to work with it more professional",
             client: "Yaroslav",
-            image: userPhoto,
+            image: Yaroslav,
             href: "#",
         },
         {
             id: 2,
             text: "React is my passion but sometimes i make mistakes. One day i made a mistake and i couldn't solve it. I asked Alex to help me with it and he helped.",
             client: "Dmitriy",
-            image: userPhoto,
+            image: Dmitriy,
             href: "#",
         },
         {
             id: 3,
             text: "Thank you so much! This man saved me! I had a lot of work and the deadlines were very close. I couldn`t handle it on my own, so i called Alex. I barely kept my job, and  Alex safe it",
-            client: "Client Name",
-            image: userPhoto,
+            client: "Alina",
+            image: Alina,
             href: "#",
         },
     ],
