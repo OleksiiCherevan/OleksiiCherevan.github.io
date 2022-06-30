@@ -4,12 +4,13 @@ import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAn
 
 import { default as BarTestimonials } from "components/01-molecules/05-bars/BarTestimonials";
 import { TESTIMONIALS } from "assets/static";
+import BlockPage from "components/01-molecules/02-blocks/BlockPage";
 
 const Testimonials = (props) => {
     const { children } = props;
 
     return (
-        <div className={style["block"]}>
+        <BlockPage>
             <div className={style["header"]}>
                 <HeaderBlockAndText
                     header={TESTIMONIALS.header}
@@ -23,7 +24,7 @@ const Testimonials = (props) => {
                     cards={TESTIMONIALS.testimonials}
                 ></BarTestimonials>
             </div>
-        </div>
+            </BlockPage>
     );
 };
 

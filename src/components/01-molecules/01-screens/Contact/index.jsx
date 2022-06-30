@@ -5,12 +5,13 @@ import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAn
 import { default as BarTestimonials } from "components/01-molecules/05-bars/BarTestimonials";
 import { TESTIMONIALS } from "assets/static";
 import ContactForm from "components/01-molecules/02-blocks/ContactForm";
+import BlockPage from "components/01-molecules/02-blocks/BlockPage";
 
 const Contact = (props) => {
     const { children } = props;
 
     return (
-        <div className={style["block"]}>
+        <BlockPage>
             <div className={style["header"]}>
                 <HeaderBlockAndText
                     header="Get In Touch"
@@ -19,11 +20,11 @@ const Contact = (props) => {
                 ></HeaderBlockAndText>
             </div>
 
-            <div className={style["content"]}>
-                <ContactForm></ContactForm>
-            </div>
-        </div>
+
+            <ContactForm></ContactForm>
+        </BlockPage>
     );
+    
 };
 
 export default Contact;

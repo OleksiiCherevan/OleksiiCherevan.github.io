@@ -1,0 +1,8 @@
+.block {
+    padding: 80px 0 ;
+    
+    max-width: 920px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
