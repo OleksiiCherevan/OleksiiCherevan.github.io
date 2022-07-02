@@ -3,11 +3,10 @@ import React from "react";
 
 import { RESUME, USER_PHOTO } from "assets/static";
 import WorkedWith from "components/01-molecules/02-blocks/WorkedWith";
-import HeaderBlockAndText from "components/01-molecules/06-headers/HeaderBlockAndText";
 import ButtonBlock from "components/00-atoms/02-buttons/ButtonBlock";
 
 import { INTRODUCTION } from "assets/static";
-import HeaderBlock from "components/00-atoms/04-texts/HeaderBlock";
+import HeaderBlock from "components/00-atoms/04-texts/HeaderForBlock";
 import Text from "components/00-atoms/04-texts/Text";
 
 const Introduction = (props) => {

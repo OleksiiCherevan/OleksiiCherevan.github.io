@@ -5,6 +5,7 @@ import TextBox from "components/00-atoms/05-fields/TextBox";
 import TextArea from "components/00-atoms/05-fields/TextArea";
 import ButtonBlock from "components/00-atoms/02-buttons/ButtonBlock";
 
+import BlockPage from "../BlockPage";
 const COUNT_CARDS = 2;
 const ContactForm = (props) => {
     const { children } = props;

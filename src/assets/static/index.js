@@ -131,7 +131,8 @@ export const SOCIALS = [
         id: 0,
         href: "https://www.linkedin.com/in/oleksii-cherevan-166560238/",
         image: linkedIn,
-    },{
+    },
+    {
         id: 1,
         href: "https://github.com/OleksiiCherevan",
         image: gitHub,
@@ -211,7 +212,7 @@ export const CASE_STUDIES = {
 
 export const TESTIMONIALS = {
     header: "Testimonials",
-    text: "",
+    text: "All these people are real but images were changed for confident. It`s a reall feedback.",
     testimonials: [
         {
             id: 0,
@@ -288,4 +289,9 @@ export const RECENT_WORKS = {
         //     image: WORK1,
         // },
     ],
+};
+
+export const CONTACT = {
+    header: "Get In Touch",
+    text: "To contact me you can use this form. I`m kidding you, i have no email server, it`ll be better if you use my email.",
 };

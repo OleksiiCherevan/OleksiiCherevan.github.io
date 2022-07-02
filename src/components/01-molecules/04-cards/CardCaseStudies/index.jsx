@@ -5,8 +5,16 @@ import ButtonTag from "components/00-atoms/02-buttons/ButtonTag";
 import HeaderCardAndText from "components/01-molecules/06-headers/HeaderCardAndText";
 
 const CardCaseStudies = (props) => {
-    const { children, text, textTag, header, colorPrimary, colorSecondary, href, image } =
-        props;
+    const {
+        children,
+        text,
+        textTag,
+        header,
+        colorPrimary,
+        colorSecondary,
+        href,
+        image,
+    } = props;
 
     return (
         <div className={style["card"]}>
@@ -24,7 +32,6 @@ const CardCaseStudies = (props) => {
                     ></HeaderCardAndText>
                 </div>
 
-
                 <ButtonCard
                     href={href}
                     text="View case study"
@@ -32,7 +39,12 @@ const CardCaseStudies = (props) => {
                 ></ButtonCard>
             </div>
 
-            <img className={style["image"]} src={image} alt={header}></img>
+            <img
+                className={style["image"]}
+                loading="lazy"
+                src={image}
+                alt={header}
+            ></img>
         </div>
     );
 };
