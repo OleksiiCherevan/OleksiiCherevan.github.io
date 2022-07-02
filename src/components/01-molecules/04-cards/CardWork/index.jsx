@@ -15,6 +15,7 @@ const CardWork = (props) => {
         <div className={style["card"]}>
             <img
                 className={`${style["image"]} ${imageAnimation}`}
+                loading="lazy"
                 src={image}
                 alt={header}
             ></img>
