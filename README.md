@@ -5,7 +5,7 @@
     click me =) 
 </a>
 
-## If you want to copy this project you chould use foloving commands: 
+## If you want to copy this project you should use following commands: 
 
 1.
 <code>
