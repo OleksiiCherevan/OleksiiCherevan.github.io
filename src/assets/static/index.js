@@ -27,7 +27,7 @@ import Alina from "assets/images/user/Alina.jpg";
 import Dmitriy from "assets/images/user/Dmitriy.jpg";
 import Yaroslav from "assets/images/user/Yaroslav.jpg";
 
-import resume from "assets/data/resume.pdf";
+import resume from "assets/data/CV, Front-end, Oleksii Cherevan.pdf";
 
 //files
 export const RESUME = resume;
