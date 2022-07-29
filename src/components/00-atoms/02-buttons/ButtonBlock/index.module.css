@@ -24,3 +24,7 @@
     background-color: var(--color-primary);
     color: var(--color-font-secondary);
 }
+
+.button:hover {
+    background-color: var(--color-secondary);
+}

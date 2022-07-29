@@ -7,6 +7,11 @@
     background-color: var(--color-background-body);
 }
 
+.block_mobile {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .nav {
     padding-bottom: 4px;
     display: flex;
