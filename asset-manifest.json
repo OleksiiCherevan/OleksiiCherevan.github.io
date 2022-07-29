@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bd500a5.css",
-    "main.js": "/static/js/main.ffbc70b2.js",
+    "main.css": "/static/css/main.9a4677a1.css",
+    "main.js": "/static/js/main.6d4db1d3.js",
     "static/js/787.889a2e79.chunk.js": "/static/js/787.889a2e79.chunk.js",
     "static/media/CV, Front-end, Oleksii Cherevan.pdf": "/static/media/CV, Front-end, Oleksii Cherevan.bf5006b68adf0dd05880.pdf",
     "static/media/JWT.jpg": "/static/media/JWT.a470d25663876cbbdbda.jpg",
@@ -20,12 +20,12 @@
     "static/media/arrow-left.svg": "/static/media/arrow-left.921a08e0f55a5e4b72362c97b7d6f672.svg",
     "static/media/linkedIn.svg": "/static/media/linkedIn.3ef2d1d8133ebb9c363e56326bcb92b9.svg",
     "static/media/quotes.svg": "/static/media/quotes.c85c47d6b0464f52e3265c9b44cf5198.svg",
-    "main.5bd500a5.css.map": "/static/css/main.5bd500a5.css.map",
-    "main.ffbc70b2.js.map": "/static/js/main.ffbc70b2.js.map",
+    "main.9a4677a1.css.map": "/static/css/main.9a4677a1.css.map",
+    "main.6d4db1d3.js.map": "/static/js/main.6d4db1d3.js.map",
     "787.889a2e79.chunk.js.map": "/static/js/787.889a2e79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bd500a5.css",
-    "static/js/main.ffbc70b2.js"
+    "static/css/main.9a4677a1.css",
+    "static/js/main.6d4db1d3.js"
   ]
 }
